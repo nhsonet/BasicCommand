@@ -1,0 +1,8 @@
+
+dotnet ef migrations add MigrationV1
+dotnet ef migrations add MigrationV1 --startup-project ../PersonalSpace.Web/ --context ApplicationDbContext
+
+
+dotnet ef database update
+dotnet ef database update --startup-project ../PersonalSpace.Web/ --context ApplicationDbContext
+
