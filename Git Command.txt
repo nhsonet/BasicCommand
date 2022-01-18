@@ -1,0 +1,17 @@
+
+git init
+
+git remote add origin https://github.com/username/new_repo
+
+git branch -m master main
+
+git reset --hard origin/main
+
+
+git pull origin main
+
+git add .
+
+git commit -m "Initial 2022.01.18"
+
+git push -u origin main
