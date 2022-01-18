@@ -1,0 +1,15 @@
+cd D:\Repo\PersonalBlog
+
+ng new PersonalBlog-UI --skip-git --skip-tests --skip-install
+
+npm install
+
+ng add ngx-bootstrap
+npm install --save ngx-bootstrap
+
+npm install --save @fortawesome/fontawesome-free
+
+ng build
+
+ng serve -o
+
