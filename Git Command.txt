@@ -10,6 +10,8 @@ git reset --hard origin/main
 
 git pull origin main
 
+touch .gitignore
+
 git add .
 
 git commit -m "Initial 2022.01.18"
