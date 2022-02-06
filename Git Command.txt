@@ -19,3 +19,5 @@ git add .
 git commit -m "Initial 2022.01.18"
 
 git push -u origin main
+git push -f origin main
+
