@@ -3,6 +3,8 @@ git init
 
 git remote add origin https://github.com/username/new_repo
 
+git branch --show
+
 git branch -m master main
 
 git reset --hard origin/main
