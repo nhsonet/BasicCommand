@@ -1,8 +1,13 @@
 
 dotnet ef migrations add MigrationV1
-dotnet ef migrations add MigrationV1 --startup-project ../PersonalSpace.Web/ --context ApplicationDbContext
+dotnet ef migrations add MigrationV1 --startup-project ../PersonalSpace.WebAPI/ --context ApplicationDbContext
 
+dotnet ef migrations add IdentityMigrationV1 --startup-project ../PersonalSpace.WebAPI/ --context IdentityDBContext -o ../PersonalSpace.Infrastructure/Migrations/Identity
+dotnet ef migrations add EntityMigrationV1 --startup-project ../PersonalSpace.WebAPI/ --context EntityDBContext -o ../PersonalSpace.Infrastructure/Migrations/Entity
 
 dotnet ef database update
 dotnet ef database update --startup-project ../PersonalSpace.Web/ --context ApplicationDbContext
+
+dotnet ef database update --startup-project ../PersonalSpace.WebAPI/ --context IdentityDBContext
+dotnet ef database update --startup-project ../PersonalSpace.WebAPI/ --context EntityDBContext
 
