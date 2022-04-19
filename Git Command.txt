@@ -23,3 +23,11 @@ git commit -m "Initial 2022.01.18"
 git push -u origin main
 git push -f origin main
 
+
+gitk
+
+git reflog
+
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+
