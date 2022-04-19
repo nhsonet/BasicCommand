@@ -28,6 +28,6 @@ gitk
 
 git reflog
 
-git reset --soft HEAD~1
-git reset --hard HEAD~1
+git reset --soft 0ea6a67
+git reset --hard 0ea6a67
 
