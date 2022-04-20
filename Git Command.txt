@@ -25,7 +25,6 @@ git push -f origin main
 
 
 gitk
-
 git reflog
 
 git reset --soft 0ea6a67
