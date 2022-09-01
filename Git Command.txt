@@ -16,6 +16,9 @@ git status
 
 
 git add .
+git reset -- <path/to/file>
+git add -- . :!path/to/file1 :!path/to/file2 :!path/to/folder1/*
+
 git commit -m "Initial 2022.01.18"
 
 git push origin main
