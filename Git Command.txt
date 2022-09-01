@@ -7,25 +7,37 @@ git branch --show
 
 git branch -m master main
 
-git reset --hard origin/main
+touch .gitignore
 
 
 git pull origin main
 
-touch .gitignore
-
 git status
 
-git add .
 
+git add .
 git commit -m "Initial 2022.01.18"
 
+git push origin main
 git push -u origin main
 git push -f origin main
 
 
+git fetch origin
+git reset --hard origin/main
+
+
+git stash show -p
+git stash
+git stash drop
+
+git stash pop
+git stash apply
+
+
 gitk
 git reflog
+
 
 git reset --soft 0ea6a67
 git reset --hard 0ea6a67
