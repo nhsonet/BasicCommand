@@ -44,4 +44,11 @@ git reflog
 
 git reset --soft 0ea6a67
 git reset --hard 0ea6a67
+git push origin feature/car_loan_core --force
+
+
+git diff feature/car_loan_core..feature/car_loan_core_v2
+git diff feature/car_loan_core feature/car_loan_core_v2 -- src/Presentation/Areas/Accounts/Models/CarLoan.cs
+
+git log --pretty=format:"%h %ad %an - %s" --date=short --oneline
 
